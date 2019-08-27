@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>	
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-9">
+				<img id="btnFullScreen" src="http://www.worksolution.ws/wp-content/uploads/2015/07/full_ciinza.png">	
+			</div>
+
+			<div class="col-sm-9">
+				<img id="btnExitFullScreen" src="http://www.worksolution.ws/wp-content/uploads/2015/06/fullscreen-exit-cinza_converted.png">				
+			</div>
+
+			<div id="divImagem">			
+				<img id="imagem" src="">
+			</div>
+		</div>
+		
+		<form action="#">
+
+			<div class="row">
+
+				  <div class="medidaHorizontal"><p>Tampo:</p>
+					<div title="Preto">
+						<input type="radio" id="g1" name="c1" value="PT">
+
+						<label for="g1"></label>
+					</div>
+					<div title="Branco">
+						<input type="radio" id="g2" name="c1" value="BR" checked>
+
+						<label for="g2"></label>
+					</div>
+					<div title="Grafite">
+						<input type="radio" id="g3" name="c1" value="GF">
+
+						<label for="g3"></label>
+					</div>
+					<div title="Cinza Cobalto">
+						<input type="radio" id="g4" name="c1" value="CC">
+
+						<label for="g4"></label>
+					</div>
+					<div title="Carvalho Prata">
+						<input type="radio" id="g5" name="c1" value="CP">
+
+						<label for="g5"></label>
+					</div>
+					<div title="Álamo">
+						<input type="radio" id="g6" name="c1" value="AL">
+
+						<label for="g6"></label>
+					</div>
+					<div title="Larnaca">
+						<input type="radio" id="g7" name="c1" value="LA">
+
+						<label for="g7"></label>
+					</div>
+					<div title="Noce Monza">
+						<input type="radio" id="g8" name="c1" value="NM">
+
+						<label for="g8"></label>
+					</div>
+					<div title="Itapuã">
+						<input type="radio" id="g9" name="c1" value="IT">
+
+						<label for="g9"></label>
+					</div>
+					<div title="Maple Bilbao">
+						<input type="radio" id="g10" name="c1" value="MT">
+
+						<label for="g10"></label>
+					</div>
+				</div>
+
+			  	<div class="medidaHorizontal"><p>Corpo:</p>
+					<div title="Preto">
+						<input type="radio" id="f1" name="c2" value="PT">
+
+						<label for="f1"></label>
+					</div>
+					<div title="Branco">
+						<input type="radio" id="f2" name="c2" value="BR" checked>
+
+						<label for="f2"></label>
+					</div>
+					<div title="Grafite">
+						<input type="radio" id="f3" name="c2" value="GF">
+
+						<label for="f3"></label>
+					</div>
+					<div title="Cinza Cobalto">
+						<input type="radio" id="f4" name="c2" value="CC">
+
+						<label for="f4"></label>
+					</div>
+					<div title="Carvalho Prata">
+						<input type="radio" id="f5" name="c2" value="CP">
+
+						<label for="f5"></label>
+					</div>
+					<div title="Álamo">
+						<input type="radio" id="f6" name="c2" value="AL">
+
+						<label for="f6"></label>
+					</div>
+					<div title="Larnaca">
+						<input type="radio" id="f7" name="c2" value="LA">
+
+						<label for="f7"></label>
+					</div>
+					<div title="Noce Monza">
+						<input type="radio" id="f8" name="c2" value="NM">
+
+						<label for="f8"></label>
+					</div>
+					<div title="Itapuã">
+						<input type="radio" id="f9" name="c2" value="IT">
+
+						<label for="f9"></label>
+					</div>
+					<div title="Maple Bilbao">
+						<input type="radio" id="f10" name="c2" value="MT">
+
+						<label for="f10"></label>
+					</div>
+				</div>
+
+			  	<div class="medidaHorizontal"><p>Interno:</p>
+				<div title="Branco">
+				    <input type="radio" id="h2" name="c3" value="BR" checked>
+
+				    <label for="h2"></label>
+				</div>
+				<div title="Preto">
+				    <input type="radio" id="h1" name="c3" value="PT">
+
+				    <label for="h1"></label>
+				</div>
+				<div title="Grafite">
+				    <input type="radio" id="h3" name="c3" value="GF">
+
+				    <label for="h3"></label>
+				</div>
+				</div>
+
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>

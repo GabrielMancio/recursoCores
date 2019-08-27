@@ -1,0 +1,460 @@
+[type="radio"]:checked,
+
+[type="radio"]:not(:checked) {
+
+    position: absolute;
+
+    left: -9999px;
+
+}
+
+[type="radio"]:checked + label,
+
+[type="radio"]:not(:checked) + label
+
+{
+
+    margin-top: 27px;
+
+    margin-left: 10px;
+
+    position: relative;
+
+    padding-left: 28px;
+
+    cursor: pointer;
+
+    line-height: 28px;
+
+    display: inline-block;
+
+    color: #666;
+
+}
+
+[type="radio"]:checked + label:before,
+
+[type="radio"]:not(:checked) + label:before {
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 41px;
+
+    height: 41px;
+
+    border: 0.3px solid #ddd;
+
+    border-radius: 100%;
+
+}
+
+[type="radio"]:checked + label:after,
+
+[type="radio"]:not(:checked) + label:after {
+
+    content: '';
+
+    width: 15px;
+
+    height: 15px;
+
+    background: #333;
+
+    border: 2px solid #ddd;
+
+    position: absolute;
+
+    top: 13px;
+
+    left: 13px;
+
+    border-radius: 100%;
+
+    -webkit-transition: all 0.2s ease;
+
+    transition: all 0.2s ease;
+
+}
+
+[type="radio"]:not(:checked) + label:after {
+
+    opacity: 0;
+
+    -webkit-transform: scale(0);
+
+    transform: scale(2);
+
+}
+
+[type="radio"]:checked + label:after {
+
+    opacity: 1;
+
+    -webkit-transform: scale(1);
+
+    transform: scale(1);
+
+}
+
+[type="radio"]#g1:checked + label:before,
+
+[type="radio"]#g1:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/PT-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g2:checked + label:before,
+
+[type="radio"]#g2:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/BR-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g3:checked + label:before,
+
+[type="radio"]#g3:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2019/03/grafite-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g4:checked + label:before,
+
+[type="radio"]#g4:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/cinza-cobalto-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g5:checked + label:before,
+
+[type="radio"]#g5:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/CP-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g6:checked + label:before,
+
+[type="radio"]#g6:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/alamo-a.png");
+
+    background-size: cover;
+
+}
+
+[type="radio"]#g7:checked + label:before,
+
+[type="radio"]#g7:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/larnaca-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g8:checked + label:before,
+
+[type="radio"]#g8:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/NM-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g9:checked + label:before,
+
+[type="radio"]#g9:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/itapua-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#g10:checked + label:before,
+
+[type="radio"]#g10:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2019/06/maple-bilbao-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f1:checked + label:before,
+
+[type="radio"]#f1:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/PT-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f2:checked + label:before,
+
+[type="radio"]#f2:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/BR-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f3:checked + label:before,
+
+[type="radio"]#f3:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2019/03/grafite-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f4:checked + label:before,
+
+[type="radio"]#f4:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/cinza-cobalto-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f5:checked + label:before,
+
+[type="radio"]#f5:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/CP-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f6:checked + label:before,
+
+[type="radio"]#f6:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/alamo-a.png");
+
+    background-size: cover;
+
+}
+
+[type="radio"]#f7:checked + label:before,
+
+[type="radio"]#f7:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/larnaca-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f8:checked + label:before,
+
+[type="radio"]#f8:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/NM-A.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f9:checked + label:before,
+
+[type="radio"]#f9:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2018/10/itapua-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#f10:checked + label:before,
+
+[type="radio"]#f10:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2019/06/maple-bilbao-a.png");
+
+    background-size: cover;
+
+}
+
+
+[type="radio"]#h1:checked + label:before,
+
+[type="radio"]#h1:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/PT-A.png");
+
+    background-size: cover;
+
+}
+
+[type="radio"]#h2:checked + label:before,
+
+[type="radio"]#h2:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2015/06/BR-A.png");
+
+    background-size: cover;
+
+}
+
+[type="radio"]#h3:checked + label:before,
+
+[type="radio"]#h3:not(:checked) + label:before
+
+{
+
+    background-image: url("http://www.worksolution.ws/wp-content/uploads/2019/03/grafite-a.png");
+
+    background-size: cover;
+
+}
+
+.medidaHorizontal
+
+{
+
+    width: 250px;
+    height:150px;
+    float:left;
+
+}
+
+.medidaHorizontal p{
+
+    margin-left: 15px;
+    line-height: 25px;
+
+}
+
+.medidaHorizontal div{
+
+    float:left;
+    width:45px;
+    height:45px;
+
+}
+
+#divImagem, #imagem
+{
+    transition: 0.5s;
+}
+.fullscreen
+{
+    background: rgba(50,50,50,0.5);
+    width:100%; 
+    height:100%;
+    position: fixed;
+    z-index:10000;
+    transition: 0.5s;
+}
+.imgfullscreen
+{
+    width: 100% !important;
+    transition: 0.5s;
+}
+
+#btnFullScreen{
+    float: right;
+    position: absolute;
+    margin-top:25px;
+    
+}
+
+#btnExitFullScreen{
+    float: right;
+    position: absolute;
+    margin-top:25px;
+    z-index:100009;
+    display:none;
+}
+
+#imagem{
+    width:500px;
+}
