@@ -13,6 +13,9 @@
 <body>	
 	
 	<div class="container-fluid">
+		<button id="movelAtivo" class="btnMovel" title1="Tampo" title2="Corpo" title3="Interno" src="http://www.worksolution.ws/wp-content/themes/struck/images/executivaWs1000/">Rack</button>
+		<button class="btnMovel" title1="Biombo" title2="Madeira" title3="Ferragem" src="http://www.worksolution.ws/wp-content/themes/struck/images/slim25_biombos/">Biombo</button>
+		<!-- <button class="btnMovel" src="http://www.worksolution.ws/wp-content/themes/struck/images/slim25_biombos/">n tem</button> -->
 		<div class="row">
 			<div class="col-sm-9">
 				<img id="btnFullScreen" src="http://www.worksolution.ws/wp-content/uploads/2015/07/full_ciinza.png">	
@@ -31,7 +34,7 @@
 
 			<div class="row">
 
-				  <div class="medidaHorizontal"><p>Tampo:</p>
+				  <div class="medidaHorizontal" id="title1"><p>Tampo:</p>
 					<div title="Preto">
 						<input type="radio" id="g1" name="c1" value="PT">
 
@@ -84,7 +87,7 @@
 					</div>
 				</div>
 
-			  	<div class="medidaHorizontal"><p>Corpo:</p>
+			  	<div class="medidaHorizontal" id="title2"><p>Corpo:</p>
 					<div title="Preto">
 						<input type="radio" id="f1" name="c2" value="PT">
 
@@ -137,7 +140,7 @@
 					</div>
 				</div>
 
-			  	<div class="medidaHorizontal"><p>Interno:</p>
+			  	<div class="medidaHorizontal" id="title3"><p>Interno:</p>
 				<div title="Branco">
 				    <input type="radio" id="h2" name="c3" value="BR" checked>
 
@@ -156,7 +159,6 @@
 				</div>
 
 			</div>
-
 		</form>
 	</div>
 </body>

@@ -456,5 +456,13 @@
 }
 
 #imagem{
-    width:500px;
+    width:700px;
+}
+.btnMovel{
+    background-color: white;
+    color: black;
+    border: 1px solid #e7e7e7;
+}
+.btnMovel:hover{
+    background-color: #e7e7e7;
 }
