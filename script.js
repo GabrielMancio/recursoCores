@@ -1,7 +1,7 @@
 var dir_img;
-var conjuntoA;
-var conjuntoB;
-var conjuntoC;
+var formGroup;
+var arrayRadio = new Array();
+
 $(document).on('click', 'img#btnFullScreen', function(){
 	$('div#divImagem').addClass('fullscreen');
 	setTimeout(function(){
@@ -22,34 +22,48 @@ $(document).on('click', 'img#btnExitFullScreen', function(){
 });
 
 $(document).on('click','input',function(){
-	var c1 = $('[name=c1]:checked').val();
-	var c2 = $('[name=c2]:checked').val();
-	var c3 = $('[name=c3]:checked').val();
-	$("#imagem").attr('src',dir_img+c1+"-"+c2+"-"+c3+".jpg");
+	for(var i = 0; i < 25; i++){
+		if($('[name=c'+i+']').length){
+			arrayRadio[i] = $('[name=c'+i+']:checked').val();
+		}
+	}
+	var nmImg = '';
+	for(var i = 1; i < arrayRadio.length; i++){
+		if(i==1){
+			nmImg += arrayRadio[i];
+		}else{
+			nmImg += '-'+arrayRadio[i];
+		}
+	}
+	$("#imagem").attr('src',dir_img + nmImg +".jpg");
 });
 $(document).ready(function(){ 
-	dir_img = $('#movelAtivo').attr('src');
-	conjuntoA = $('#movelAtivo').attr("title1");
-	conjuntoB = $('#movelAtivo').attr("title2");
-	conjuntoC = $('#movelAtivo').attr("title3");
+	dir_img = $('#recursoAtivo').attr('src');
+	formGroup = $('#recursoAtivo').attr('value');
+	$('#'+formGroup).css('display', 'block');
 	startRecurso();
 });
 $(document).on('click', '.btnMovel', function(){
 	dir_img = $(this).attr('src');
-	conjuntoA = $(this).attr("title1");
-	conjuntoB = $(this).attr("title2");
-	conjuntoC = $(this).attr("title3");
+	formGroup = $(this).attr('value');
+	$('.formGroup').css('display', 'none');
+	$('#'+formGroup).css('display', 'block');
 	startRecurso();
 });
 function startRecurso(){
-	$(this).trigger('click');
-	$(this).trigger('click');
-	$(this).trigger('click');
-	var c1 = $('#g1').val();
-	var c2 = $('#f1').val();
-	var c3 = $('#h1').val();
-	$("#imagem").attr('src',dir_img+c1+"-"+c2+"-"+c3+".jpg");
-	$("div#title1 p").html(conjuntoA);
-	$("div#title2 p").html(conjuntoB);
-	$("div#title3 p").html(conjuntoC);
+	$('.radioactive').trigger('click');
+	for(var i = 0; i < 25; i++){
+		if($('[name=c'+i+']').length){
+			arrayRadio[i] = $('[name=c'+i+']:checked').val();
+		}
+	}
+	var nmImg = '';
+	for(var i = 1; i < arrayRadio.length; i++){
+		if(i==1){
+			nmImg += arrayRadio[i];
+		}else{
+			nmImg += '-'+arrayRadio[i];
+		}
+	}
+	$("#imagem").attr('src',dir_img + nmImg +".jpg");
 }
